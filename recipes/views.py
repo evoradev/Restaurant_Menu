@@ -3,11 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def Home(request):
-    context = {
-        'name': 'Rafael',
-        'age': 25,
-    }
-    return render (request, 'recipes/home.html', context)
+    return render (request, 'recipes/pages/home.html')
 
 def Contact(request):
     httpResponse = HttpResponse("Contact working!")
