@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\rafae\OneDrive\Área de Trabalho\Validação\venv"
+VIRTUAL_ENV="C:\Users\rafae\OneDrive\Documentos\Restaurant_Menu\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
