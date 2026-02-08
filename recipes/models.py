@@ -3,7 +3,9 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=65)
-    slug = models.SlugField()
+    
+    def __str__(self):
+        return self.name
 
 class Recipe(models.Model):
     title = models.CharField(max_length=65)
@@ -21,4 +23,3 @@ class Recipe(models.Model):
     cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/')
     Category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
-    
